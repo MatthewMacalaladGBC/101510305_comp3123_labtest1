@@ -1,3 +1,7 @@
+// COMP3123, Lab Test 1
+// Matthew Macalalad, 101510305
+// Question 1: ES6 Features
+
 const lowerCaseWords = (arr) => {
     return new Promise((resolve, reject) => {
         let string_arr = arr.filter(item => typeof item === "string");
