@@ -1,7 +1,7 @@
 const lowerCaseWords = (arr) => {
     return new Promise((resolve, reject) => {
-        let word_arr = arr.filter(item => typeof item === "string");
-        let lowercase_arr = word_arr.map(word => word.toLowerCase());
+        let string_arr = arr.filter(item => typeof item === "string");
+        let lowercase_arr = string_arr.map(word => word.toLowerCase());
         if (lowercase_arr.length > 0) {
             resolve(lowercase_arr)
         } else {
@@ -10,6 +10,6 @@ const lowerCaseWords = (arr) => {
     });
 };
 
-lowerCaseWords([10, 11, 12, "asdbg*asAJSFDd5af"])
+lowerCaseWords(["PIZZA", 10, true, 25, false, "Wings"])
     .then(result => console.log(result))
     .catch(err => console.log(err))
